@@ -1,5 +1,1 @@
-node_modules/
-dist/
-.env
-.env.*.local
-npm-debug.log*
+Nothing needs to be added to .gitignore since only CSS files were changed, which are source files that should be tracked.

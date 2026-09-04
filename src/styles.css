@@ -1,30 +1,23 @@
 :root {
-  color-scheme: light;
-  font-family: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  color-scheme: dark;
+  font-family: "Montserrat", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --ink: #11100e;
-  --ink-soft: #1a1814;
-  --ink-raised: #232019;
-  --paper: #f5f1e8;
-  --paper-bright: #fffdf9;
-  --paper-deep: #e8e1d4;
-  --gold: #c99a3b;
-  --gold-bright: #e8bf65;
-  --gold-dark: #8b6729;
-  --text: #181612;
-  --muted: #706a5f;
-  --muted-light: #b5ad9e;
-  --line: rgba(17, 16, 14, 0.14);
-  --line-dark: rgba(255, 253, 248, 0.15);
-  --error: #b44232;
-  --success: #32745e;
-  --focus: #f0cb70;
-  --content: 1180px;
+  --Black: #000000;
+  --Yelow: #af7b20;
+  --Yelow-strobe: #d7ac45;
+  --White: #ffffff;
+  --White-Strobe-Form: rgba(255, 255, 255, 0.5);
+  --Grey-input-Strobe: #cacaca;
+  --Blue-Back: #030a23;
+  --text: #ffffff;
+  --text-soft: #eaeaea;
+  --text-muted: #ffffffbf;
+  --muted: #ffffff80;
+  --focus: #d7ac45;
+  --content: 1920px;
   --gutter: clamp(20px, 4vw, 48px);
-  --display: Georgia, "Times New Roman", serif;
-  --utility: "Segoe UI Variable Text", "Segoe UI", Arial, sans-serif;
-  --shadow-soft: 0 22px 60px rgba(50, 42, 30, 0.10);
+  --shadow-soft: 0 22px 60px rgba(215, 172, 69, 0.15);
 }
 
 * {
@@ -39,7 +32,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: var(--paper);
+  background: var(--Black);
   color: var(--text);
   line-height: 1.55;
 }
@@ -88,8 +81,8 @@ p {
 }
 
 ::selection {
-  background: var(--gold-bright);
-  color: var(--ink);
+  background: var(--Yelow);
+  color: var(--Black);
 }
 
 .container {
