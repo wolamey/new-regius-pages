@@ -1,32 +1,41 @@
 @font-face {
-  font-family: "Montserrat Regius";
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-Light.woff") format("woff");
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat Regius";
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-SemiBold.woff") format("woff");
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-display: swap;
 }
 
+:root {
+  --Black: #000000;
+  --Yelow: #af7b20;
+  --Yelow-strobe: #d7ac45;
+  --White: #ffffff;
+  --White-Strobe-Form: rgba(255, 255, 255, 0.5);
+  --Grey-input-Strobe: #cacaca;
+}
+
 .page-production {
-  --prod-black: #050608;
-  --prod-steel: #121720;
-  --prod-steel-light: #202936;
-  --prod-gold: #c48c20;
-  --prod-gold-light: #e2b953;
+  --prod-black: #000000;
+  --prod-steel: #0a0a0a;
+  --prod-steel-light: #1a1a1a;
+  --prod-gold: #af7b20;
+  --prod-gold-light: #d7ac45;
   --prod-blue: #1677d2;
   --prod-cyan: #3dc6ff;
-  --prod-white: #f4f7fa;
-  --prod-muted: #97a0ab;
+  --prod-white: #ffffff;
+  --prod-muted: #eaeaea;
   color: var(--prod-white);
   background: var(--prod-black);
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .page-production .container {
@@ -54,7 +63,7 @@
   padding-block: 30px;
   color: #a7adb5;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .page-production .desktop-nav a:hover,
@@ -136,7 +145,7 @@
   margin-bottom: 24px;
   color: var(--prod-gold-light);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
@@ -144,7 +153,7 @@
 .prod-hero h1 {
   max-width: 720px;
   margin-bottom: 30px;
-  font: 300 clamp(54px, 5.25vw, 80px)/0.98 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 300 clamp(54px, 5.25vw, 80px)/0.98 Montserrat, Arial, sans-serif;
   letter-spacing: -0.052em;
 }
 
@@ -158,7 +167,7 @@
   margin-bottom: 34px;
   color: #b8bec6;
   font-size: clamp(17px, 1.35vw, 20px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.64;
 }
 
@@ -178,7 +187,7 @@
   border: 1px solid transparent;
   color: inherit;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
   clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
@@ -279,7 +288,7 @@
 
 .prod-order-tag strong {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prod-order-tag em {
@@ -383,7 +392,7 @@
 .prod-case h2,
 .prod-start h2 {
   margin: 0;
-  font: 300 clamp(42px, 4.6vw, 68px)/1.06 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 300 clamp(42px, 4.6vw, 68px)/1.06 Montserrat, Arial, sans-serif;
   letter-spacing: -0.045em;
 }
 
@@ -404,12 +413,12 @@
   grid-row: 1 / span 2;
   color: #a6761c;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prod-call-chain strong {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prod-call-chain em {
@@ -436,11 +445,11 @@
 
 .prod-problem-statement p {
   color: #747a82;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .prod-problem-statement strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prod-route {
@@ -468,7 +477,7 @@
   margin: 0;
   color: var(--prod-muted);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -499,7 +508,7 @@
   grid-column: 1;
   color: #29303a;
   font-size: clamp(56px, 7vw, 102px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.06em;
   text-align: right;
 }
@@ -547,14 +556,14 @@
 .prod-route-copy span {
   color: var(--prod-cyan);
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .prod-route-copy h3 {
   margin: 10px 0 14px;
-  font: 300 clamp(25px, 2.6vw, 38px)/1.16 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 300 clamp(25px, 2.6vw, 38px)/1.16 Montserrat, Arial, sans-serif;
   letter-spacing: -0.035em;
 }
 
@@ -562,7 +571,7 @@
   margin: 0;
   color: var(--prod-muted);
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -619,7 +628,7 @@
 .prod-case-numbers strong {
   color: var(--prod-gold-light);
   font-size: clamp(82px, 10vw, 144px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.075em;
   line-height: 0.8;
 }
@@ -637,7 +646,7 @@
   margin: 28px 0 0;
   color: #b4bdc7;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.75;
 }
 
@@ -739,12 +748,12 @@
 
 .page-production .faq-section .section-kicker {
   color: var(--prod-gold-light);
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 .page-production .faq-section .section-heading h2 {
   color: var(--prod-white);
-  font: 300 clamp(40px, 4vw, 58px)/1.08 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 300 clamp(40px, 4vw, 58px)/1.08 Montserrat, Arial, sans-serif;
 }
 
 .page-production .faq-section .section-heading > p,
@@ -759,8 +768,8 @@
 
 .page-production .faq-item button {
   color: var(--prod-white);
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
-  font-weight: 300;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 400;
 }
 
 .page-production .faq-item button svg {
@@ -776,13 +785,13 @@
 .page-production .lead-copy h2,
 .page-production .success-card h2 {
   color: var(--prod-white);
-  font: 300 clamp(40px, 4vw, 58px)/1.08 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 300 clamp(40px, 4vw, 58px)/1.08 Montserrat, Arial, sans-serif;
 }
 
 .page-production .lead-copy .section-kicker,
 .page-production .success-card .section-kicker {
   color: var(--prod-gold-light);
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 .page-production .lead-form {
@@ -1432,8 +1441,8 @@
 
 .page-production .desktop-nav a {
   color: #51585c;
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
-  font-weight: 600;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
@@ -1495,7 +1504,7 @@
 .prod-overline,
 .prod-section-label {
   color: #895f13;
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 .prod-hero h1,
@@ -1513,7 +1522,7 @@
 .prod-hero h1 {
   max-width: 650px;
   font-size: clamp(58px, 5.4vw, 84px);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.055em;
 }
@@ -1534,7 +1543,7 @@
 .prod-button {
   border-radius: 2px;
   clip-path: none;
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 .prod-button-primary {
@@ -1563,7 +1572,7 @@
 
 .prod-proofline {
   color: #656c6f;
-  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 .prod-proofline svg {
@@ -1856,7 +1865,7 @@
   border: 0;
   color: var(--prod-blueprint);
   background: transparent;
-  font: 600 11px/1 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 600 11px/1 Montserrat, Arial, sans-serif;
   cursor: pointer;
   gap: 7px;
   transition: color var(--duration-quick) var(--ease-smooth-out);
@@ -1923,7 +1932,7 @@
 
 .prod-hero-trace strong {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .prod-scroll {
@@ -1940,7 +1949,7 @@
 .prod-route h2,
 .prod-case h2,
 .prod-start h2 {
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.05em;
 }
 
@@ -1954,7 +1963,7 @@
 }
 
 .prod-route-copy h3 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .prod-case {
@@ -2085,7 +2094,7 @@
 
 .prod-case-node strong {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .node-sales { top: 9%; left: 5%; }
