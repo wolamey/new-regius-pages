@@ -1394,25 +1394,35 @@
   }
 }
 
-/* v3 — самостоятельная рекламная страница, не копия главного сайта */
+
+/* v3 — production landing restyled to the RegiusLab design system
+   (black background, gold accents, Montserrat). Content unchanged. */
 .page-production {
-  --prod-paper: #e9e7df;
-  --prod-paper-light: #f7f6f1;
-  --prod-ink: #121619;
-  --prod-brass: #c38d24;
-  --prod-blueprint: #225e78;
-  --prod-alert: #b64d32;
-  --prod-white: #f7f6f1;
-  --prod-muted: #98a0a4;
+  --prod-paper: #0a0a0a;
+  --prod-paper-light: #0d0c0a;
+  --prod-ink: #f5f0e6;
+  --prod-brass: #af7b20;
+  --prod-blueprint: #d7ac45;
+  --prod-alert: #e05a4a;
+  --prod-white: #f5f0e6;
+  --prod-muted: #a89f92;
+  /* Remap the v1 accent variables to the RegiusLab gold palette. */
+  --prod-black: #000000;
+  --prod-steel: #0a0a0a;
+  --prod-steel-light: #141210;
+  --prod-gold: #af7b20;
+  --prod-gold-light: #d7ac45;
+  --prod-blue: #af7b20;
+  --prod-cyan: #d7ac45;
   color: var(--prod-ink);
   background: var(--prod-paper);
-  font-family: Aptos, "Segoe UI", Arial, sans-serif;
+  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
 }
 
 .page-production .site-header {
   color: var(--prod-ink);
-  border-bottom: 1px solid rgba(18, 22, 25, 0.2);
-  background: rgba(233, 231, 223, 0.94);
+  border-bottom: 1px solid rgba(215, 172, 69, 0.18);
+  background: rgba(0, 0, 0, 0.9);
   box-shadow: none;
   backdrop-filter: blur(14px);
 }
@@ -1431,9 +1441,9 @@
 }
 
 .page-production .desktop-nav a {
-  color: #51585c;
+  color: var(--prod-muted);
   font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0.02em;
 }
 
@@ -1453,17 +1463,17 @@
 }
 
 .page-production .menu-button {
-  border-color: rgba(18, 22, 25, 0.28);
+  border-color: rgba(255, 255, 255, 0.28);
   color: var(--prod-ink);
 }
 
 .page-production .mobile-nav {
-  border-color: rgba(18, 22, 25, 0.16);
+  border-color: rgba(255, 255, 255, 0.16);
   background: var(--prod-paper-light);
 }
 
 .page-production .mobile-nav a {
-  border-color: rgba(18, 22, 25, 0.12);
+  border-color: rgba(255, 255, 255, 0.12);
   color: var(--prod-ink);
 }
 
@@ -1475,8 +1485,8 @@
 
 .prod-hero::before {
   background-image:
-    linear-gradient(rgba(18, 22, 25, 0.052) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(18, 22, 25, 0.052) 1px, transparent 1px);
+    linear-gradient(rgba(215, 172, 69, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 172, 69, 0.05) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: linear-gradient(90deg, transparent 0%, #000 42%, #000 100%);
 }
@@ -1494,7 +1504,7 @@
 
 .prod-overline,
 .prod-section-label {
-  color: #895f13;
+  color: var(--prod-brass);
   font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
 }
 
@@ -1507,67 +1517,68 @@
 .page-production .faq-section .section-heading h2,
 .page-production .lead-copy h2,
 .page-production .success-card h2 {
-  font-family: Aptos, "Segoe UI", Arial, sans-serif;
+  font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
 }
 
 .prod-hero h1 {
   max-width: 650px;
   font-size: clamp(58px, 5.4vw, 84px);
-  font-weight: 600;
+  font-weight: 300;
   line-height: 0.95;
   letter-spacing: -0.055em;
 }
 
 .prod-hero h1 span {
   display: block;
-  color: var(--prod-blueprint);
+  color: var(--prod-brass);
 }
 
 .prod-hero-text {
   max-width: 610px;
-  color: #4f5659;
+  color: var(--prod-muted);
   font-size: clamp(18px, 1.35vw, 20px);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.58;
 }
 
 .prod-button {
-  border-radius: 2px;
+  border-radius: 40px;
   clip-path: none;
   font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
 }
 
 .prod-button-primary {
-  color: #111416;
+  color: #000;
   background: var(--prod-brass);
-  box-shadow: 5px 5px 0 var(--prod-ink);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.6);
 }
 
 .prod-button-primary:hover {
-  color: #111416;
-  background: #d7a744;
+  color: #000;
+  background: var(--prod-brass);
   transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 var(--prod-ink);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
 }
 
 .prod-button-secondary {
-  border-color: rgba(18, 22, 25, 0.42);
+  border-color: var(--prod-brass);
   color: var(--prod-ink);
-  background: rgba(247, 246, 241, 0.38);
+  background: transparent;
 }
 
 .prod-button-secondary:hover {
-  border-color: var(--prod-blueprint);
-  color: var(--prod-blueprint);
+  border-color: var(--prod-brass);
+  color: #000;
+  background: var(--prod-brass);
 }
 
 .prod-proofline {
-  color: #656c6f;
+  color: var(--prod-muted);
   font-family: "Montserrat Regius", Montserrat, Arial, sans-serif;
 }
 
 .prod-proofline svg {
-  color: var(--prod-blueprint);
+  color: var(--prod-brass);
 }
 
 .prod-artifact {
@@ -1583,21 +1594,21 @@
   min-height: 598px;
   justify-self: end;
   padding: 30px 30px 24px 58px;
-  border: 1px solid rgba(18, 22, 25, 0.58);
+  border: 1px solid rgba(215, 172, 69, 0.4);
   color: var(--prod-ink);
   background:
-    linear-gradient(rgba(34, 94, 120, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 94, 120, 0.07) 1px, transparent 1px),
+    linear-gradient(rgba(215, 172, 69, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 172, 69, 0.06) 1px, transparent 1px),
     var(--prod-paper-light);
   background-size: 24px 24px;
-  box-shadow: 20px 24px 0 rgba(18, 22, 25, 0.12), 0 30px 70px rgba(37, 33, 24, 0.18);
+  box-shadow: 20px 24px 0 rgba(0, 0, 0, 0.4), 0 30px 70px rgba(0, 0, 0, 0.5);
   transform: rotate(1.25deg);
 }
 
 .prod-passport::after {
   position: absolute;
   inset: 10px;
-  border: 1px solid rgba(18, 22, 25, 0.12);
+  border: 1px solid rgba(215, 172, 69, 0.2);
   content: "";
   pointer-events: none;
 }
@@ -1615,10 +1626,10 @@
 .prod-passport-holes i {
   width: 12px;
   height: 12px;
-  border: 1px solid rgba(18, 22, 25, 0.4);
+  border: 1px solid rgba(215, 172, 69, 0.4);
   border-radius: 50%;
   background: var(--prod-paper);
-  box-shadow: inset 2px 2px 2px rgba(18, 22, 25, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .prod-passport-head {
@@ -1650,7 +1661,7 @@
 }
 
 .prod-passport-head span {
-  color: #687174;
+  color: var(--prod-muted);
 }
 
 .prod-passport-head strong {
@@ -1698,15 +1709,15 @@
 }
 
 .passport-path-shadow {
-  stroke: #b7b8b3;
+  stroke: #3a352c;
   stroke-dasharray: 7 7;
 }
 
 .passport-path-progress {
-  stroke: var(--prod-blueprint);
+  stroke: var(--prod-brass);
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
-  filter: drop-shadow(0 2px 2px rgba(34, 94, 120, 0.16));
+  filter: drop-shadow(0 2px 2px rgba(215, 172, 69, 0.2));
 }
 
 .passport-runner {
@@ -1717,7 +1728,7 @@
 }
 
 .passport-runner-halo {
-  fill: rgba(195, 141, 36, 0.34);
+  fill: rgba(215, 172, 69, 0.3);
   transform-box: fill-box;
   transform-origin: center;
 }
@@ -1737,13 +1748,13 @@
   min-width: 108px;
   display: grid;
   padding: 9px 10px 10px;
-  border: 1px solid rgba(18, 22, 25, 0.42);
-  background: rgba(247, 246, 241, 0.94);
+  border: 1px solid rgba(215, 172, 69, 0.4);
+  background: rgba(13, 12, 10, 0.94);
   gap: 3px;
 }
 
 .prod-passport-station span {
-  color: #6c7477;
+  color: var(--prod-muted);
 }
 
 .prod-passport-station strong {
@@ -1762,7 +1773,7 @@
 }
 
 .prod-passport-station.is-done i {
-  background: var(--prod-blueprint);
+  background: var(--prod-brass);
 }
 
 .prod-passport-station.is-current {
@@ -1789,7 +1800,7 @@
   padding: 14px 16px;
   border: 2px solid var(--prod-alert);
   color: var(--prod-alert);
-  background: rgba(247, 246, 241, 0.78);
+  background: rgba(13, 12, 10, 0.8);
   gap: 3px;
   transform: rotate(-5deg);
 }
@@ -1837,7 +1848,7 @@
 .prod-passport-foot p {
   max-width: 260px;
   margin: 0;
-  color: #737a7d;
+  color: var(--prod-muted);
   text-align: right;
 }
 
@@ -1854,7 +1865,7 @@
   justify-content: center;
   padding: 0 4px;
   border: 0;
-  color: var(--prod-blueprint);
+  color: var(--prod-brass);
   background: transparent;
   font: 600 11px/1 "Montserrat Regius", Montserrat, Arial, sans-serif;
   cursor: pointer;
@@ -1870,7 +1881,7 @@
 
 .prod-passport-replay:focus-visible {
   border-radius: 2px;
-  outline: 2px solid var(--prod-blueprint);
+  outline: 2px solid var(--prod-brass);
   outline-offset: 3px;
 }
 
@@ -1897,9 +1908,9 @@
 }
 
 .prod-hero-trace {
-  border-block-color: var(--prod-ink);
-  color: var(--prod-paper-light);
-  background: var(--prod-ink);
+  border-block-color: rgba(215, 172, 69, 0.3);
+  color: var(--prod-white);
+  background: #000;
 }
 
 .prod-hero-trace .container {
@@ -1908,12 +1919,12 @@
 
 .prod-hero-trace .container > div {
   min-height: 88px;
-  border-color: rgba(247, 246, 241, 0.16);
-  color: var(--prod-paper-light);
+  border-color: rgba(255, 255, 255, 0.16);
+  color: var(--prod-white);
 }
 
 .prod-hero-trace .container > div:first-child {
-  border-left-color: rgba(247, 246, 241, 0.16);
+  border-left-color: rgba(255, 255, 255, 0.16);
 }
 
 .prod-hero-trace span {
@@ -1927,7 +1938,7 @@
 }
 
 .prod-scroll {
-  color: #545c60;
+  color: var(--prod-muted);
 }
 
 .prod-problem,
@@ -1940,33 +1951,33 @@
 .prod-route h2,
 .prod-case h2,
 .prod-start h2 {
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: -0.05em;
 }
 
 .prod-route {
   color: var(--prod-white);
   background:
-    linear-gradient(rgba(255, 255, 255, 0.023) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.023) 1px, transparent 1px),
-    #11171a;
+    linear-gradient(rgba(215, 172, 69, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 172, 69, 0.03) 1px, transparent 1px),
+    #000;
   background-size: 64px 64px;
 }
 
 .prod-route-copy h3 {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .prod-case {
   min-height: 860px;
   color: var(--prod-white);
-  background: #16303a;
+  background: #0a0908;
 }
 
 .prod-case::before {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(215, 172, 69, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 172, 69, 0.03) 1px, transparent 1px);
   background-size: 44px 44px;
 }
 
@@ -2000,7 +2011,7 @@
 }
 
 .prod-case-numbers strong {
-  color: #edc565;
+  color: var(--prod-brass);
   font-size: clamp(72px, 7vw, 106px);
 }
 
@@ -2008,14 +2019,14 @@
   position: relative;
   min-height: 430px;
   overflow: hidden;
-  border: 1px solid rgba(18, 22, 25, 0.5);
+  border: 1px solid rgba(215, 172, 69, 0.4);
   color: var(--prod-ink);
   background:
-    linear-gradient(rgba(34, 94, 120, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 94, 120, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(215, 172, 69, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 172, 69, 0.08) 1px, transparent 1px),
     var(--prod-paper-light);
   background-size: 22px 22px;
-  box-shadow: 12px 12px 0 rgba(7, 18, 22, 0.28);
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.4);
 }
 
 .prod-case-map > svg {
@@ -2027,7 +2038,7 @@
 
 .prod-case-map path {
   fill: none;
-  stroke: var(--prod-blueprint);
+  stroke: var(--prod-brass);
   stroke-dasharray: 5 5;
   stroke-width: 2;
 }
@@ -2037,7 +2048,7 @@
   position: absolute;
   display: grid;
   border: 1px solid var(--prod-ink);
-  background: rgba(247, 246, 241, 0.96);
+  background: rgba(13, 12, 10, 0.96);
 }
 
 .prod-case-core {
@@ -2069,7 +2080,7 @@
 
 .prod-case-core em {
   margin-top: 8px;
-  color: var(--prod-blueprint);
+  color: var(--prod-brass);
 }
 
 .prod-case-node {
@@ -2080,7 +2091,7 @@
 }
 
 .prod-case-node span {
-  color: var(--prod-blueprint);
+  color: var(--prod-brass);
 }
 
 .prod-case-node strong {
@@ -2098,19 +2109,19 @@
   right: 18px;
   bottom: 10px;
   margin: 0;
-  color: #737a7d;
+  color: var(--prod-muted);
 }
 
 .prod-start .prod-button-primary {
-  color: var(--prod-paper-light);
-  background: var(--prod-ink);
-  box-shadow: 5px 5px 0 var(--prod-brass);
+  color: #000;
+  background: var(--prod-brass);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.6);
 }
 
 .prod-start .prod-button-primary:hover {
-  color: var(--prod-paper-light);
-  background: #243138;
-  box-shadow: 3px 3px 0 var(--prod-brass);
+  color: #000;
+  background: var(--prod-brass);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 1120px) {
@@ -2175,7 +2186,7 @@
   .prod-passport {
     min-height: 492px;
     padding: 22px 17px 18px 40px;
-    box-shadow: 10px 12px 0 rgba(18, 22, 25, 0.12);
+    box-shadow: 10px 12px 0 rgba(0, 0, 0, 0.4);
     transform: rotate(0.5deg);
   }
 
