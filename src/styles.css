@@ -1216,7 +1216,7 @@ p {
 }
 
 .trust-section {
-  color: var(--paper-bright);
+  color: white;
   background: var(--ink-soft);
   border-block: 1px solid var(--line-dark);
 }
@@ -1245,7 +1245,6 @@ p {
 }
 
 .trust-grid span {
-  color: #9f978b;
   font-size: 12px;
 }
 
@@ -1382,11 +1381,11 @@ p {
   margin-top: 30px;
   padding: 18px 0;
   border-block: 1px solid var(--line-dark);
+  color: white;
 }
 
 .response-promise > svg {
   flex: 0 0 auto;
-  color: var(--gold);
 }
 
 .response-promise p {
@@ -1396,7 +1395,6 @@ p {
 }
 
 .response-promise span {
-  color: #8d8579;
   font-size: 12px;
 }
 
@@ -1405,7 +1403,6 @@ p {
   margin: 28px 0 0;
   padding: 0;
   gap: 12px;
-  color: #b3ab9f;
   font-size: 14px;
   list-style: none;
 }
@@ -1418,7 +1415,6 @@ p {
 
 .lead-checklist svg {
   width: 17px;
-  color: var(--gold);
 }
 
 .lead-form {
@@ -2677,7 +2673,6 @@ body {
 }
 
 .trust-grid span {
-  color: var(--muted);
 }
 
 .pilot-section {
@@ -2749,15 +2744,12 @@ body {
 }
 
 .response-promise span {
-  color: var(--muted);
 }
 
 .lead-checklist {
-  color: var(--muted);
 }
 
 .lead-checklist svg {
-  color: var(--gold);
 }
 
 .form-progress p,

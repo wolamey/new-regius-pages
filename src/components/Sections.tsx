@@ -7,7 +7,7 @@ import { HeroVisual } from "./HeroVisual";
 
 export function Hero({ page }: { page: PageContent }) {
   const primaryEvent = page.kind === "sales" ? "pilot_click" : "cta_click";
-
+ 
   return (
     <section className="hero">
       <div className="hero-grid-overlay" aria-hidden="true" />

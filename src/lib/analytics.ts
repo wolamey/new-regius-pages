@@ -1,7 +1,7 @@
 import type { OfferCode } from "../types";
 
 export type AnalyticsEvent =
-  | "lp_view"
+  | "lp_view" 
   | "cta_click"
   | "form_start"
   | "form_step_complete"

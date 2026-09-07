@@ -8,7 +8,7 @@ export type PageKind = "production" | "orders" | "sales" | "bitrix";
 
 export interface FaqItem {
   question: string;
-  answer: string;
+  answer: string; 
 }
 
 export interface PageContent {

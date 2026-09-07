@@ -383,7 +383,7 @@
 .prod-case h2,
 .prod-start h2 {
   margin: 0;
-  font: 300 clamp(42px, 4.6vw, 68px)/1.06 "Montserrat Regius", Montserrat, Arial, sans-serif;
+  font: 300 clamp(42px, 3vw, 68px)/1.06 "Montserrat Regius", Montserrat, Arial, sans-serif;
   letter-spacing: -0.045em;
 }
 
@@ -1314,21 +1314,21 @@
 }
 
 @keyframes prod-station-pass {
-  0% { border-color: rgba(18, 22, 25, 0.42); background: rgba(247, 246, 241, 0.94); transform: translateY(0) scale(1); }
-  32% { border-color: var(--prod-blueprint); background: #eef4f5; transform: translateY(-4px) scale(1.035); }
-  100% { border-color: rgba(34, 94, 120, 0.62); background: rgba(239, 244, 244, 0.96); transform: translateY(0) scale(1); }
+  0% { border-color: var(--prod-brass); background: rgba(0, 0, 0, 0.94); transform: translateY(0) scale(1); }
+  32% { border-color:var(--prod-brass); background: #000000; transform: translateY(-4px) scale(1.035); }
+  100% { border-color:var(--prod-brass); background: rgba(0, 0, 0, 0.96); transform: translateY(0) scale(1); }
 }
 
 @keyframes prod-station-quality {
-  0% { border-color: rgba(18, 22, 25, 0.42); background: rgba(247, 246, 241, 0.94); transform: rotate(0) scale(1); }
-  32% { border-color: var(--prod-alert); background: #f7ece7; transform: rotate(-3deg) scale(1.045); }
-  100% { border-color: rgba(34, 94, 120, 0.62); background: rgba(239, 244, 244, 0.96); transform: rotate(0) scale(1); }
+  0% { border-color: var(--prod-brass); background: rgba(0, 0, 0, 0.94); transform: rotate(0) scale(1); }
+  32% { border-color: var(--prod-alert); background: #000000; transform: rotate(-3deg) scale(1.045); }
+  100% { border-color:var(--prod-brass); background: rgba(0, 0, 0, 0.96); transform: rotate(0) scale(1); }
 }
 
 @keyframes prod-station-final {
-  0% { border-color: rgba(18, 22, 25, 0.42); background: rgba(247, 246, 241, 0.94); transform: translateY(0) scale(1); }
-  38% { border-color: var(--prod-brass); background: #fbf3df; transform: translateY(-4px) scale(1.045); }
-  100% { border-color: var(--prod-brass); background: #fbf3df; transform: translateY(0) scale(1); }
+  0% { border-color: var(--prod-brass); background: rgba(0, 0, 0, 0.94); transform: translateY(0) scale(1); }
+  38% { border-color: var(--prod-brass); background: #000000; transform: translateY(-4px) scale(1.045); }
+  100% { border-color: var(--prod-brass); background: #000000; transform: translateY(0) scale(1); }
 }
 
 @keyframes prod-station-node {
@@ -1826,7 +1826,7 @@
 }
 
 .prod-passport-stamp strong {
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1;
 }
 
