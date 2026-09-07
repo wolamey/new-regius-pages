@@ -2175,7 +2175,8 @@
   background: var(--bitrix-teal);
 }
 .bitrix-campaign .lead-copy > p {
-  color: #c2d9d5;
+  color: #fff; 
+  margin-top: 20px;
 }
 .bitrix-campaign .response-promise {
   border-color: rgba(255, 255, 255, 0.24);
@@ -3621,7 +3622,6 @@
   background: var(--bitrix-teal);
 }
 .bitrix-campaign .lead-copy > p {
-  color: #000;
 }
 .bitrix-campaign .response-promise {
   border-color: rgba(0, 0, 0, 0.24);
